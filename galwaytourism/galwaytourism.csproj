@@ -1,0 +1,74 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\aranislands.jpg" />
+    <None Remove="Images\blackrockdivingboard.jpg" />
+    <None Remove="Images\connemaranationalpark.jpg" />
+    <None Remove="Images\connemaraNP.jpg" />
+    <None Remove="Images\diamondhill.jpg" />
+    <None Remove="Images\ininmor.jpg" />
+    <None Remove="Images\inismeain.jpg" />
+    <None Remove="Images\inismor.jpg" />
+    <None Remove="Images\inisoirr.jpg" />
+    <None Remove="Images\kylemoreabbey.jpg" />
+    <None Remove="Images\kylemoreabbeychurch.jpg" />
+    <None Remove="Images\kylemorewalledgarden.jpg" />
+    <None Remove="Images\Salthill.jpg" />
+    <None Remove="Images\salthillbeach.jpg" />
+    <None Remove="Images\salthillprom.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Images\aranislands.jpg" />
+    <EmbeddedResource Include="Images\blackrockdivingboard.jpg" />
+    <EmbeddedResource Include="Images\connemaranationalpark.jpg" />
+    <EmbeddedResource Include="Images\connemaraNP.jpg" />
+    <EmbeddedResource Include="Images\diamondhill.jpg" />
+    <EmbeddedResource Include="Images\ininmor.jpg" />
+    <EmbeddedResource Include="Images\inismeain.jpg" />
+    <EmbeddedResource Include="Images\inisoirr.jpg" />
+    <EmbeddedResource Include="Images\kylemoreabbey.jpg" />
+    <EmbeddedResource Include="Images\kylemoreabbeychurch.jpg" />
+    <EmbeddedResource Include="Images\kylemorewalledgarden.jpg" />
+    <EmbeddedResource Include="Images\Salthill.jpg" />
+    <EmbeddedResource Include="Images\salthillbeach.jpg" />
+    <EmbeddedResource Include="Images\salthillprom.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="AranIslands.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ConnemaraNationalPark.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="KylemoreAbbey.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="NotesEntryPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="NotesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Salthill.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

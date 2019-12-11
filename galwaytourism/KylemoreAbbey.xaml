@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="galwaytourism.KylemoreAbbey"
+             Title="Kylemore Abbey">
+    <ContentPage.Content>
+
+        <!--Creating the layout of page with a scroll view, Images and Labels, Buttons-->
+
+        <ScrollView VerticalOptions="FillAndExpand">
+            <StackLayout Margin="20,35,20,20">
+            <Label HorizontalTextAlignment="Start" Text="Originally a Castle, built as a romantic gift for the beautiful Margaret Henry in 1867, Kylemore Abbey is steeped in tales of romance, tragedy, spirituality and innovation. Home to the Benedictine nuns since 1920, this 1,000 acre estate makes an unforgettable day out." TextColor="Black" BackgroundColor="White"  HorizontalOptions="Center"/>
+            <Image x:Name="kylemoregardenImg" Source="kylemoreabbeywalledgarden.jpg" HorizontalOptions="Center" />
+            <Label Text="Kylemore Abbey Walled Garden" TextColor="Black" FontAttributes="Bold" BackgroundColor="White"  HorizontalOptions="Center"/>
+            <Label HorizontalTextAlignment="Start" Text="The Victorian Walled Garden is an oasis of ordered splendor in the wild Connemara Countryside. Developed along with the Castle in the late 1800s it once boasted 21 heated glass houses and a workforce of 40 gardeners. One of the last walled gardens built during the Victorian period in Ireland it was so advanced for the time that it was compared in magnificence with Kew Gardens in London." TextColor="Black" BackgroundColor="White"  HorizontalOptions="Center"/>
+            <Image x:Name="kylemorechurchImg" Source="kylemoreabbeychurch.jpg" HorizontalOptions="Center" />
+            <Label Text="Kylemore Abbey Church" TextColor="Black" FontAttributes="Bold" BackgroundColor="White"  HorizontalOptions="Center"/>
+            <Label HorizontalTextAlignment="Start" Text="Kylemore Abbey Church is located in the grounds of Kylemore Abbey in County Galway. This little church is  regarded as one of the most beautiful churches in Ireland and has one the finest interiors. It was built in 1881 in the memory of Margaret Henry and is sometimes referred to as the Taj Mahal of Ireland." TextColor="Black" HorizontalOptions="Center" BackgroundColor="White" />
+            <Button Text="Click Here For Visitor Info!" Clicked="Button_Clicked" HorizontalOptions="Center" TextColor="Black" FontAttributes="Bold" BackgroundColor="White" BorderColor="Blue" BorderWidth="5" CornerRadius="5" Margin="20"/>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

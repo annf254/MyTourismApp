@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="galwaytourism.AranIslands"
+             Title="Aran Islands">
+    <ContentPage.Content>
+        
+        <!--Creating the layout of page with a scroll view, Images and Labels, Buttons-->
+        
+        <ScrollView VerticalOptions="FillAndExpand">
+            <StackLayout Margin="20,35,20,20">
+                <Label HorizontalTextAlignment="Start" Text="The Aran Islands or The Arans are a group of three islands located at the mouth of Galway Bay, on the west coast of Ireland, with a total area of about 46 km². They constitute the barony of Aran in County Galway, Ireland. " TextColor="Black" BackgroundColor="White"  HorizontalOptions="Center"/>
+                <Image x:Name="inismeainImg" Source="inismeain.jpg" HorizontalOptions="Center" />
+                <Label Text="Inis Meáin (InishMaan)" TextColor="Black" FontAttributes="Bold" BackgroundColor="White"  HorizontalOptions="Center"/>
+                <Label HorizontalTextAlignment="Start" Text="Inishmaan is the middle of the three main Aran Islands in Galway Bay on the west coast of Ireland. It is part of County Galway in the province of Connacht. Inishmaan has a population of about 183, making it the smallest of the Aran Islands in terms of population. It is one of the most important strongholds of traditional Irish culture. The island is predominantly Irish-speaking and part of the Gaeltacht, though all inhabitants have knowledge of English." TextColor="Black" BackgroundColor="White"  HorizontalOptions="Center"/>
+                <Image x:Name="inisoirrImg" Source="inisoirr.jpg" HorizontalOptions="Center" />
+                <Label Text="Inis Oírr(Inisheer)" TextColor="Black" FontAttributes="Bold" BackgroundColor="White"  HorizontalOptions="Center"/>
+                <Label HorizontalTextAlignment="Start" Text="Inis Oírr or Inisheer is the smallest and most eastern of the three Aran Islands in Galway Bay, Ireland. With about 260 permanent residents, it is more populous than Inishmaan but less than Inishmore. " TextColor="Black" HorizontalOptions="Center" BackgroundColor="White" />
+                <Image x:Name="inismorImg" Source="inismor.jpg" HorizontalOptions="Center" />
+                <Label Text="Inis Mór (Inishmore)" TextColor="Black" FontAttributes="Bold" BackgroundColor="White"  HorizontalOptions="Center"/>
+                <Label HorizontalTextAlignment="Start" Text="Inishmore or Inis Mór is the largest of the Aran Islands in Galway Bay in Ireland and has an area of 31 km². Inis Mór has a population of about 840, making it the largest of the Aran Islands in terms of population and largest island off the Irish coast with no bridge or causeway to the mainland. The island is famous for its strong Irish culture, loyalty to the Irish language. " TextColor="Black" HorizontalOptions="Center" BackgroundColor="White" />
+                <Button Text="Click Here For More Info!" Clicked="Button_Clicked" HorizontalOptions="Center" TextColor="Black" FontAttributes="Bold" BackgroundColor="White" BorderColor="Blue" BorderWidth="5" CornerRadius="5" Margin="20"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

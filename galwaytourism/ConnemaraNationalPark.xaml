@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="galwaytourism.ConnemaraNationalPark"
+             Title="Connemara National Park">
+    <ContentPage.Content>
+        
+        <!--Creating the layout of page with a scroll view, Images and Labels, Buttons-->
+           
+        <ScrollView VerticalOptions="FillAndExpand">
+            <StackLayout Margin="20,35,20,20">
+                <Image x:Name="connemaraNPImg" Source="connemaraNP.jpg" HorizontalOptions="Center" />
+                <Label HorizontalTextAlignment="Start" Text="Situated in the West of Ireland in County Galway, Connemara National Park covers some 2,000 hectares of scenic mountains, expanses of bogs, heaths, grasslands and woodlands. A number of walking trails beginning at the Visitor Centre offer walkers a variety of scenic routes and nature trails through the park." TextColor="Black" BackgroundColor="White"  HorizontalOptions="Center"/>
+                <Label Text="Diamond Hill" TextColor="Black" FontAttributes="Bold" BackgroundColor="White"  HorizontalOptions="Center"/>
+                <Image x:Name="diamondhillImg" Source="diamondhill.jpg" HorizontalOptions="Center" />
+                <Button Text="Click Here For Visitor Info!" Clicked="Button_Clicked" HorizontalOptions="Center" TextColor="Black" FontAttributes="Bold" BackgroundColor="White" BorderColor="Blue" BorderWidth="5" CornerRadius="5" Margin="20"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

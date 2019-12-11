@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="galwaytourism.NotesEntryPage">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            
+                <!--creating placeholder for the note you enter-->
+            <Editor Placeholder="Enter your note"
+                    Text="{Binding Text}"
+                    HeightRequest="100" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                
+                <!--creating save and delete buttons-->
+                <Button Text="Save"
+                        BackgroundColor="PaleTurquoise"
+                        Clicked="OnSaveButtonClicked" />
+                <Button Grid.Column="1"
+                        Text="Delete"
+                        BackgroundColor="Red"
+                        Clicked="OnDeleteButtonClicked" />
+            </Grid>
+            
+            <!--creating a main page button-->
+            <Button Text="Main Page"
+                    BackgroundColor="Green"
+                    Clicked="MainPage" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

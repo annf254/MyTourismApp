@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="galwaytourism.Salthill"
+             Title="Salthill">
+    <ContentPage.Content>
+
+        <!--Creating the layout of page with a scroll view, Images and Labels, Buttons-->
+        
+        <ScrollView VerticalOptions="FillAndExpand">
+            <StackLayout Margin="20,35,20,20">
+                <Image x:Name="salthillbeachImg" Source="salthillbeach.jpg" HorizontalOptions="Center" />
+                <Label Text="Salthill Beach" TextColor="Black" FontAttributes="Bold" BackgroundColor="White"  HorizontalOptions="Center"/>
+                <Label HorizontalTextAlignment="Start" Text="Situated just minutes from the Galway City Centre, Salthill is a traditional seaside resort offering facilities to please young and old. Salthill's famous prom is the perfect place to watch the sun go down on Galway Bay. The beach is lifeguarded from mid-May to the end of September from 11am to 7pm. Salthill beach has been a blue flag beach and enormously popular in fine weather during the summer." TextColor="Black" BackgroundColor="White"  HorizontalOptions="Center"/>
+                <Image x:Name="salthillpromImg" Source="salthillprom.jpg" HorizontalOptions="Center" />
+                <Label Text="Salthill Promenade" TextColor="Black" FontAttributes="Bold" BackgroundColor="White"  HorizontalOptions="Center"/>
+                <Image x:Name="blackrockdivingboardImg" Source="blackrockdivingboard.jpg" HorizontalOptions="Center" />
+                <Label Text="Blackrock Diving Board" TextColor="Black" FontAttributes="Bold" BackgroundColor="White"  HorizontalOptions="Center"/>
+                <Button Text="Click Here For More Info on Salthill!" Clicked="Button_Clicked" HorizontalOptions="Center" TextColor="Black" FontAttributes="Bold" BackgroundColor="White" BorderColor="Blue" BorderWidth="5" CornerRadius="5" Margin="20"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

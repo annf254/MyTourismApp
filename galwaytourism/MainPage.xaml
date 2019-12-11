@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:galwaytourism"
+             x:Class="galwaytourism.MainPage"
+             Title="MainPage">
+
+    <!--Creating the layout of page with a scroll view, Images and Labels, Buttons-->
+
+    <ScrollView VerticalOptions="FillAndExpand">
+        <StackLayout Margin="20,35,20,20">
+            <Button x:Name="ItineraryPlanner" Text="Itinerary Planner +" Clicked="Button_Clicked"  TextColor="Black" FontAttributes="Bold" BackgroundColor="White" BorderColor="Blue" BorderWidth="5" CornerRadius="5" Margin="20" WidthRequest="100" HeightRequest="50"/>
+            
+            <Label Text="MUST SEE PLACES IN GALWAY" TextColor="Black" FontAttributes="Italic" FontSize="18" TextDecorations="Underline" HorizontalOptions="Center" />
+            <ImageButton x:Name ="kylemoreAbbeyBtn" Clicked="ImageButton_Clicked" HorizontalOptions="Center" />
+            <Label Text="Kylemore Abbey" TextColor="Black" FontAttributes="Bold" BackgroundColor="White"  HorizontalOptions="Center"/>
+            <ImageButton x:Name="aranislandsBtn" Clicked="ImageButton_Clicked_1" HorizontalOptions="Center" />
+            <Label Text="Aran Islands" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" BackgroundColor="White" />
+            <ImageButton x:Name="SalthillBtn" Clicked="ImageButton_Clicked_2" HorizontalOptions="Center" />
+            <Label Text="Salthill" TextColor="Black" FontAttributes="Bold" BackgroundColor="White" HorizontalOptions="Center"/>
+            <ImageButton x:Name="connemaranationalparkBtn" Clicked="ImageButton_Clicked_3"  HorizontalOptions="Center" />
+            <Label Text="Connemara National Park" TextColor="Black" FontAttributes="Bold" BackgroundColor="White" HorizontalOptions="Center"/>
+
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
